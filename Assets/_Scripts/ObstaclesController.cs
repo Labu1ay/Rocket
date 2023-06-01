@@ -12,6 +12,7 @@ public class ObstaclesController : MonoBehaviour {
             parent.position = new Vector3(parent.position.x, _YPosFirstObstacles, parent.position.z);
             if(GameController.instance.GameStarted){
                 parent.GetComponent<Obstacle>().SetRandomPosition();
+                GameController.instance.AddScore(1);
             }
         }  
     }

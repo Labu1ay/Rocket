@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
     [SerializeField] private Transform _centerObstacle;
-    private void Start() {
-        //SetRandomPosition();
-    }
     public void SetRandomPosition() => _centerObstacle.position = new Vector3(Random.Range(-3.5f, 3.6f), 
                                                                               _centerObstacle.position.y, 
                                                                               _centerObstacle.position.z);
